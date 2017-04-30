@@ -5,3 +5,14 @@
 }
 
 <h1>@Model.Name</h1>
+<dl class="dl-horizontal">
+    <dt>Membership Type</dt>
+    <dd>@Model.MembershipType.Name</dd>
+</dl>
+@if (@Model.Birthdate != null)
+{
+    <dl class="dl-horizontal">
+        <dt>Birthdate</dt>
+        <dd>@Model.Birthdate</dd>
+    </dl>
+}
