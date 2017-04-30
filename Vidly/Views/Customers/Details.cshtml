@@ -9,10 +9,10 @@
     <dt>Membership Type</dt>
     <dd>@Model.MembershipType.Name</dd>
 </dl>
-@if (@Model.Birthdate != null)
+@if (Model.Birthdate.HasValue)
 {
     <dl class="dl-horizontal">
         <dt>Birthdate</dt>
-        <dd>@Model.Birthdate</dd>
+        <dd>@Model.Birthdate.Value.ToShortDateString()</dd>
     </dl>
 }
